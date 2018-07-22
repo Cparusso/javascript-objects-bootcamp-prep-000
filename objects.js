@@ -1,14 +1,9 @@
 const playlist = {Radiohead: 'Creep'};
 
-function updatePlaylist(playlist, artistName, songTitle) {
-  //return Object.assign({}, playlist, {artistName: songTitle});
-
-  return playlist[artistName] = songTitle;
+function updatePlaylist(playlist, artist, song) {
+  return playlist[artist] = song;
 }
 
-function removeFromPlaylist(playlist, artistName) {
-
-  delete playlist[artistName];
-
-  return playlist;
+function removeFromPlaylist(playlist, artist, song) {
+  return delete playlist[artist];
 }
